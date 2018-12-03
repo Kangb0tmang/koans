@@ -1,1 +1,8 @@
-puts "one two-three".gsub(/(t\w*)/) { $1[0, 1] }
+i = 0
+result = []
+while i < 10
+  i += 1
+  next if (i % 2) == 0
+  result << i
+end
+puts result
